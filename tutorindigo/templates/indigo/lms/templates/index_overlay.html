@@ -1,2 +1,6 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+
 <h1>${settings.PLATFORM_NAME}</h1>
 <p>{{ INDIGO_WELCOME_MESSAGE }}</p>
+<p>${_("Welcome message")}</p>
