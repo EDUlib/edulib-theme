@@ -1,0 +1,58 @@
+// ------------------------------
+// Open edX Certificates: Overrides
+
+// About: Additional sass rules that must come at the end of the compilation for overriding purposes - either for temporary/specific developer styling needs or for known poorly scoped/written styling (aka shame CSS).
+
+// #TEMP
+// #DEVELOPERS
+// #SHAME
+
+// ------------------------------
+// #TEMP
+// ------------------------------
+
+// ------------------------------
+// #DEVELOPERS
+// ------------------------------
+.accomplishment .accomplishment-type-symbol .src {display: none;}
+
+.layout-accomplishment.certificate-verified .layout-accomplishment.certificate-honor .accomplishment-rendering {
+    border-color: #5FBAE9;
+    border-width: 15px;
+}
+
+.layout-accomplishment.certificate-verified .layout-accomplishment.certificate-honor .accomplishment-rendering .accomplishment-type-label {
+    font-weight: inherit;
+    text-align: right;
+}
+
+.certificate .accomplishment-rendering .accomplishment-statement, .certificate .accomplishment-rendering .accomplishment-statement-lead, .certificate .accomplishment-rendering .accomplishment-recipient, .certificate .accomplishment-rendering .accomplishment-course {
+    font-family: inherit;
+    text-align: left
+}
+
+.certificate .accomplishment-rendering .accomplishment-statement {
+    padding: 0rem 3rem 1rem 3rem;
+}
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-course, .layout-accomplishment .accomplishment-rendering .accomplishment-recipient, .layout-accomplishment .accomplishment-rendering .accomplishment-type {
+    color: #1A9ED9;
+}
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-course {
+    font-style: italic;
+}
+
+.list-signatories {display: flex;}
+
+@media (max-width: 768px) {
+    .layout-accomplishment .accomplishment-signatories .signatory {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+// ------------------------------
+// #SHAME
+// ------------------------------
+
