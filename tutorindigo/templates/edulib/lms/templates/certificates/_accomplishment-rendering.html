@@ -14,8 +14,8 @@ course_mode_class = course_mode if course_mode else ''
             <span class="deco-corner deco-corner-br"></span>
 
             <div class="accomplishment-type">
-                <span class="accomplishment-type-symbol">
-                    <img class="src" src="/static/certificates/images/ico-${course_mode_class}.png" alt="Image for course mode of type ${course_mode_class}">
+                <span class="organization organization-edulib">
+                    <img class="organization-logo" src="${logo_src}" alt="${platform_name}">
                 </span>
 
                 <span class="accomplishment-type-label hd-3">${document_title}</span>
@@ -67,21 +67,15 @@ course_mode_class = course_mode if course_mode else ''
             <div class="accomplishment-orgs">
                 <h3 class="accomplishment-orgs-title sr-only">${_("Supported by the following organizations")}</h3>
 
-                <ul class="wrapper-orgs list-orgs">
-                    <li class="wrapper-organization">
-                        <div class="organization organization-edX">
-                            <img class="organization-logo" src="${logo_src}" alt="${platform_name}">
-                        </div>
-                    </li>
-
-                    % if organization_logo:
-                    <li class="wrapper-organization">
-                        <div class="organization">
-                            <img class="organization-logo" src="${organization_logo.url}" alt="${platform_name}">
-                        </div>
-                    </li>
-                    % endif
-                </ul>
+                <div class="wrapper-orgs list-orgs">
+                    <div class="wrapper-organization">
+                        % if organization_logo:
+                            <div class="organization">
+                                <img class="organization-logo" src="${organization_logo.url}" alt="${platform_name}">
+                            </div>
+                        % endif
+                    </div>
+                </div>
             </div>
         </div>
     </div>
