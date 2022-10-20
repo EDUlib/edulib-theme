@@ -14,53 +14,11 @@
 // ------------------------------
 // #DEVELOPERS
 // ------------------------------
-@media print {
-    .certificate-distinguished .accomplishment-rendering {
-        border-top-color: #2991c3
-    }
-
-    .accomplishment-rendering .accomplishment-type {
-        margin-top: 0rem
-    }
-}
-
-.accomplishment .accomplishment-type-symbol .src {
-    display: none
-}
-
-.accomplishment-rendering .accomplishment-type {
-    text-align: center;
-    margin-bottom: 2.5rem;
-    margin-top: 0rem
-}
-
-.accomplishment-rendering .accomplishment-type-label {
-    flex: 0 0 83.33333%;
-    margin: 0 auto;
-    font-weight: 600
-}
-
-.accomplishment-rendering .accomplishment-type-symbol {}
-
-.layout-accomplishment.certificate-verified .layout-accomplishment.certificate-honor .accomplishment-rendering {
-    border-color: #5FBAE9;
-    border-width: 15px
-}
-
-.layout-accomplishment.certificate-honor .accomplishment-rendering {
-    background: #fff
-}
-
-.layout-accomplishment.certificate-verified .accomplishment-rendering {
-    background: #fff
-}
-
 .certificate .accomplishment-rendering .accomplishment-statement,
 .certificate .accomplishment-rendering .accomplishment-statement-lead,
 .certificate .accomplishment-rendering .accomplishment-recipient,
 .certificate .accomplishment-rendering .accomplishment-course {
-    font-family: inherit;
-    text-align: center
+    font-family: inherit
 }
 
 .certificate .accomplishment-rendering .accomplishment-statement {
@@ -70,17 +28,11 @@
 .layout-accomplishment .accomplishment-rendering .accomplishment-course,
 .layout-accomplishment .accomplishment-rendering .accomplishment-recipient,
 .layout-accomplishment .accomplishment-rendering .accomplishment-type {
-    color: #1A9ED9
+    color: rgba(4,81,123,1)
 }
 
 .layout-accomplishment .accomplishment-rendering .accomplishment-course {
     font-style: italic
-}
-
-.layout-accomplishment .accomplishment-orgs {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-right: 0
 }
 
 .layout-accomplishment .accomplishment-orgs .wrapper-orgs {
@@ -88,31 +40,10 @@
     justify-content: center
 }
 
-.layout-accomplishment .accomplishment-orgs .wrapper-organization {
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: flex;
-    max-height: 6.25rem
-}
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .layout-accomplishment .accomplishment-orgs .wrapper-organization {
-        flex: 0 0 75%;
-        max-width: 75%
-    }
-}
-
-@media (min-width: 992px) {
-    .layout-accomplishment .accomplishment-orgs .wrapper-organization {
-        flex: 0 0 60%;
-        max-width: 60%
-    }
-}
-
-@media (min-width: 1200px) {
-    .layout-accomplishment .accomplishment-orgs .wrapper-organization {
-        flex: 0 0 50%;
-        max-width: 50%
+        flex: 0 0 25%;
+        max-width: 25%;
     }
 }
 
