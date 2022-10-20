@@ -29,6 +29,14 @@
   margin: 0 auto;
 }
 
+@mixin rectangle($width, $height, $color) {
+  border: 1px solid $color;
+  background: $color;
+  display: block;
+  width: $width;
+	height: $height;
+}
+
 @mixin triangle($size, $color, $direction) {
   $width: nth($size, 1);
   $height: nth($size, length($size));
