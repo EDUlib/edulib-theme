@@ -220,14 +220,12 @@
   @extend %depth-card;
 
   position: relative;
-  top: -(map-get($spacing-vertical, base));
-  border-top: rem(4) solid $cert-base-color;
 
   // type
   .accomplishment-type {
     @include text-align(center);
 
-    margin-top: -(map-get($spacing-vertical, large));
+    margin-top: map-get($spacing-vertical, base);
     margin-bottom: map-get($spacing-vertical, base);
   }
 
@@ -241,12 +239,6 @@
 
     margin: 0 auto;
     font-weight: 600;
-  }
-
-  .accomplishment-type-symbol {
-    @include size(rem(100));
-
-    margin: 0 auto map-get($spacing-vertical, small) auto;
   }
 
   // statement
@@ -288,7 +280,7 @@
 
   // organizations
   .accomplishment-orgs {
-    margin-bottom: map-get($spacing-vertical, base);
+    margin-bottom: map-get($spacing-vertical, small);
   }
 
   .accomplishment-orgs-title {
@@ -427,32 +419,60 @@
       position: absolute;
     }
 
-    .deco-corner-tl {
-      @include triangle(20px, $cert-base-color, up-right);
+    .deco-corner-htl {
+      @include rectangle(1.5rem, 20rem, $edulib-dark-blue);
 
-      top: 0;
-      right: 0;
+      top: -0.75rem;
+      left: -0.75rem;
     }
 
-    .deco-corner-tr {
-      @include triangle(20px, $cert-base-color, up-left);
+    .deco-corner-vtl {
+      @include rectangle(20rem, 1.5rem, $edulib-light-blue);
 
-      top: 0;
-      left: 0;
+      top: -0.75rem;
+      left: -0.75rem;
     }
 
-    .deco-corner-bl {
-      @include triangle(20px, $cert-base-color, down-right);
+    .deco-corner-hytl {
+      @include rectangle(15rem, 1rem, $edulib-yellow);
 
-      bottom: 0;
-      right: 0;
+      top: 1.5rem;
+      left: 1.5rem;
     }
 
-    .deco-corner-br {
-      @include triangle(20px, $cert-base-color, down-left);
+    .deco-corner-vytl {
+      @include rectangle(1rem, 15rem, $edulib-yellow);
 
-      bottom: 0;
-      left: 0;
+      top: 1.5rem;
+      left: 1.5rem;
+    }
+
+    .deco-corner-hybr {
+      @include rectangle(15rem, 1rem, $edulib-yellow);
+
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .deco-corner-vybr {
+      @include rectangle(1rem, 15rem, $edulib-yellow);
+
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .deco-corner-hbr {
+      @include rectangle(20rem, 1.5rem, $edulib-light-blue);
+
+      bottom: -0.75rem;
+      right: -0.75rem;
+    }
+
+    .deco-corner-vbr {
+      @include rectangle(1.5rem, 20rem, $edulib-dark-blue);
+
+      bottom: -0.75rem;
+      right: -0.75rem;
     }
 
     .accomplishment-type-label {
@@ -494,31 +514,70 @@
   }
 
   .accomplishment-rendering {
-    background: $white url('../images/bg-verified.png') center no-repeat;
-    background-size: 65%;
+    background: $white;
 
-    .deco-corner-tl {
-      @include triangle(20px, $cert-distinguished-color, up-right);
+    .deco-corner-htl {
+      @include rectangle(1.5rem, 20rem, $edulib-dark-blue);
+
+      top: -0.75rem;
+      left: -0.75rem;
     }
 
-    .deco-corner-tr {
-      @include triangle(20px, $cert-distinguished-color, up-left);
+    .deco-corner-vtl {
+      @include rectangle(20rem, 1.5rem, $edulib-light-blue);
+
+      top: -0.75rem;
+      left: -0.75rem;
     }
 
-    .deco-corner-bl {
-      @include triangle(20px, $cert-distinguished-color, down-right);
+    .deco-corner-hytl {
+      @include rectangle(15rem, 1rem, $edulib-yellow);
+
+      top: 1.5rem;
+      left: 1.5rem;
     }
 
-    .deco-corner-br {
-      @include triangle(20px, $cert-distinguished-color, down-left);
+    .deco-corner-vytl {
+      @include rectangle(1rem, 15rem, $edulib-yellow);
+
+      top: 1.5rem;
+      left: 1.5rem;
+    }
+
+    .deco-corner-hybr {
+      @include rectangle(15rem, 1rem, $edulib-yellow);
+
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .deco-corner-vybr {
+      @include rectangle(1rem, 15rem, $edulib-yellow);
+
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .deco-corner-hbr {
+      @include rectangle(20rem, 1.5rem, $edulib-light-blue);
+
+      bottom: -0.75rem;
+      right: -0.75rem;
+    }
+
+    .deco-corner-vbr {
+      @include rectangle(1.5rem, 20rem, $edulib-dark-blue);
+
+      bottom: -0.75rem;
+      right: -0.75rem;
     }
   }
 
   .accomplishment-rendering {
-    border-color: $cert-distinguished-color;
+    border-color: $edulib-light-blue;
 
     .accomplishment-type-label {
-      color: $cert-distinguished-color;
+      color: $edulib-light-blue;
     }
   }
 }
@@ -534,31 +593,70 @@
   }
 
   .accomplishment-rendering {
-    background: $white url('../images/bg-verified.png') center no-repeat;
-    background-size: 65%;
+    background: $white;
 
-    .deco-corner-tl {
-      @include triangle(20px, $cert-distinguished-color, up-right);
+    .deco-corner-htl {
+      @include rectangle(1.5rem, 20rem, $edulib-dark-blue);
+
+      top: -0.75rem;
+      left: -0.75rem;
     }
 
-    .deco-corner-tr {
-      @include triangle(20px, $cert-distinguished-color, up-left);
+    .deco-corner-vtl {
+      @include rectangle(20rem, 1.5rem, $edulib-light-blue);
+
+      top: -0.75rem;
+      left: -0.75rem;
     }
 
-    .deco-corner-bl {
-      @include triangle(20px, $cert-distinguished-color, down-right);
+    .deco-corner-hytl {
+      @include rectangle(15rem, 1rem, $edulib-yellow);
+
+      top: 1.5rem;
+      left: 1.5rem;
     }
 
-    .deco-corner-br {
-      @include triangle(20px, $cert-distinguished-color, down-left);
+    .deco-corner-vytl {
+      @include rectangle(1rem, 15rem, $edulib-yellow);
+
+      top: 1.5rem;
+      left: 1.5rem;
+    }
+
+    .deco-corner-hybr {
+      @include rectangle(15rem, 1rem, $edulib-yellow);
+
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .deco-corner-vybr {
+      @include rectangle(1rem, 15rem, $edulib-yellow);
+
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .deco-corner-hbr {
+      @include rectangle(20rem, 1.5rem, $edulib-light-blue);
+
+      bottom: -0.75rem;
+      right: -0.75rem;
+    }
+
+    .deco-corner-vbr {
+      @include rectangle(1.5rem, 20rem, $edulib-dark-blue);
+
+      bottom: -0.75rem;
+      right: -0.75rem;
     }
   }
 
   .accomplishment-rendering {
-    border-color: $cert-distinguished-color;
+    border-color: $edulib-light-blue;
 
     .accomplishment-type-label {
-      color: $cert-distinguished-color;
+      color: $edulib-light-blue;
     }
   }
 }
@@ -585,7 +683,8 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: $gray-transparent; /* dim the background */
+  background-color: $gray-transparent;
+  /* dim the background */
   width: 100%;
   height: 100%;
   vertical-align: middle;
@@ -626,6 +725,7 @@
     }
 
     .image-container {
+
       // Lines the image up with the content of the above list.
       @include ltr {
         @include padding-left(2em);

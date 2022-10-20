@@ -8,17 +8,21 @@ course_mode_class = course_mode if course_mode else ''
 
     <div class="wrapper-accomplishment-rendering">
         <div class="accomplishment-rendering">
-            <span class="deco-corner deco-corner-tl"></span>
-            <span class="deco-corner deco-corner-tr"></span>
-            <span class="deco-corner deco-corner-bl"></span>
-            <span class="deco-corner deco-corner-br"></span>
+            <span class="deco-corner deco-corner-vtl"></span>
+            <span class="deco-corner deco-corner-htl"></span>
+            <span class="deco-corner deco-corner-hytl"></span>
+            <span class="deco-corner deco-corner-vytl"></span>
+            <span class="deco-corner deco-corner-hybr"></span>
+            <span class="deco-corner deco-corner-vybr"></span>
+            <span class="deco-corner deco-corner-hbr"></span>
+            <span class="deco-corner deco-corner-vbr"></span>
 
             <div class="accomplishment-type">
                 <span class="organization organization-edulib">
                     <img class="organization-logo" src="${logo_src}" alt="${platform_name}">
                 </span>
 
-                <span class="accomplishment-type-label hd-3">${document_title}</span>
+                <span class="accomplishment-type-label hd-5 metadata accomplishment-date">${certificate_date_issued_title} ${certificate_date_issued}</span>
             </div>
 
             <div class="wrapper-statement-and-signatories">
@@ -27,14 +31,12 @@ course_mode_class = course_mode if course_mode else ''
                         <strong class="accomplishment-recipient hd-1 emphasized">${accomplishment_copy_name}</strong>
                         <span class="accomplishment-summary copy copy-lead">${accomplishment_copy_description_full}</span>
 
-                        <span class="accomplishment-course hd-1 emphasized">
+                        <span class="accomplishment-course hd-2 emphasized">
                             <span class="accomplishment-course-org">${accomplishment_copy_course_org}  </span>
-                            <span class="accomplishment-course-number">${course_number}</span>:
+                            <span class="accomplishment-course-number">${course_number} :</span>
                             <span class="accomplishment-course-name">${accomplishment_copy_course_name}</span>
                         </span>
                     </p>
-
-                    <p class="accomplishment-statement-detail copy copy-lead">${accomplishment_copy_course_description}</p>
                 </div>
 
                 % if mode != 'base':
@@ -77,6 +79,7 @@ course_mode_class = course_mode if course_mode else ''
                     </div>
                 </div>
             </div>
+            <div class="metadata accomplishment-id hd-7 metadata accomplishment-id">${certificate_id_number_title} : ${certificate_id_number}</div>
         </div>
     </div>
 
@@ -98,7 +101,7 @@ course_mode_class = course_mode if course_mode else ''
                     </dd>
                 </dl>
                 <dl class="metadata accomplishment-id">
-                    <dt class="label copy copy-meta">${certificate_id_number_title}:</dt>
+                    <dt class="label copy copy-meta">${certificate_id_number_title} :</dt>
                     <dd class="value copy copy-base">${certificate_id_number}</dd>
                 </dl>
                 <dl class="metadata accomplishment-date">
