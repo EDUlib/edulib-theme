@@ -41,13 +41,6 @@
     justify-content: center
 }
 
-@media (max-width: 768px) {
-    .layout-accomplishment .accomplishment-orgs .wrapper-organization {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-}
-
 .list-signatories {
     display: flex;
     justify-content: center
