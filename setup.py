@@ -25,7 +25,7 @@ ABOUT = load_about()
 
 
 setup(
-    name="tutor-indigo",
+    name="edulib-theme",
     version=ABOUT["__version__"],
     url="https://github.com/overhangio/tutor-indigo",
     project_urls={
