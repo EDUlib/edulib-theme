@@ -231,7 +231,7 @@
     }
 
     .wrapper-organization {
-      @include make-col(6);
+      @include make-col(4);
 
       display: inline-block;
       vertical-align: middle;
