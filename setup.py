@@ -41,7 +41,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.7",
     install_requires=["tutor>=13.3.1,<15.0.0"],
-    entry_points={"tutor.plugin.v1": ["edulib = tutorindigo.plugin"]},
+    entry_points={"tutor.plugin.v1": ["edulib-theme = tutorindigo.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
