@@ -231,7 +231,7 @@
     }
 
     .wrapper-organization {
-      @include make-col(4);
+      @include make-col(6);
 
       display: inline-block;
       vertical-align: middle;
@@ -247,11 +247,11 @@
       }
 
       @include media-breakpoint-up(lg) {
-        @include make-col(2);
+        @include make-col(4);
       }
 
       @include media-breakpoint-up(xl) {
-        @include make-col(2);
+        @include make-col(4);
       }
     }
 
