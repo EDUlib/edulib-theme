@@ -232,6 +232,8 @@
       .wrapper-organization {
         margin-top: map-get($spacing-vertical, small) !important;
         margin-bottom: map-get($spacing-vertical, small) !important;
+        flex: 0 0 25%;
+        max-width: 25%;
       }
 
       .organization-logo {
