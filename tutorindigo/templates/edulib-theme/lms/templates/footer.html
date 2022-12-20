@@ -20,7 +20,7 @@
             <ul class="navbar-nav">
               {% for link in INDIGO_FOOTER_NAV_LINKS %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
+                  <a class="nav-link" href="{{ link['url'] }}">${_('{{ link['title'] }}')}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -42,7 +42,7 @@
             <ul class="navbar-nav">
               {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
+                  <a class="nav-link" href="{{ link['url'] }}">${_('{{ link['title'] }}')}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -86,7 +86,7 @@
           <ol>
               {% for link in INDIGO_FOOTER_NAV_LINKS %}
               <li>
-                <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+                <a href="{{ link['url'] }}">${_('{{ link['title'] }}')}</a>
               </li>
               {% endfor %}
           </ol>
@@ -126,7 +126,7 @@
           <ul>
             {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
               <li>
-                <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+                <a href="{{ link['url'] }}">${_('{{ link['title'] }}')}</a>
               </li>
             {% endfor %}
           </ul>
