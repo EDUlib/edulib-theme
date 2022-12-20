@@ -21,7 +21,7 @@ config = {
             {"title": "Contact", "url": "/contact"},
         ],
         "FOOTER_LEGAL_LINKS": [
-            {"title": "Terms of service", "url": "/tos"},
+            {"title": "Terms of Service", "url": "/tos"},
             #{
             #    "title": "Indigo theme for Open edX",
             #    "url": "https://github.com/overhangio/tutor-indigo",
