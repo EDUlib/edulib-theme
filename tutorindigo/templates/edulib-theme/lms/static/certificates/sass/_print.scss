@@ -74,7 +74,7 @@
 
   body {
     height: auto;
-    margin: map-get($spacing-vertical, mid-small) !important;
+    margin: map-get($spacing-vertical, small) !important;
     padding: 0 !important;
   }
 
@@ -203,8 +203,8 @@
     }
 
     .accomplishment-type {  
-      margin-top: map-get($spacing-vertical, small);
-      margin-bottom: map-get($spacing-vertical, small);
+      margin-top: map-get($spacing-vertical, x-small);
+      margin-bottom: map-get($spacing-vertical, x-small);
     }
 
     .accomplishment-statement {
@@ -217,7 +217,7 @@
 
     .accomplishment-summary,
     .accomplishment-statement-detail {
-      margin-bottom: map-get($spacing-vertical, mid-small);
+      margin-bottom: map-get($spacing-vertical, small);
     }
 
     .wrapper-orgs::after {
@@ -230,8 +230,8 @@
       padding-bottom: 0 !important;
 
       .wrapper-organization {
-        margin-top: map-get($spacing-vertical, small) !important;
-        margin-bottom: map-get($spacing-vertical, small) !important;
+        margin-top: map-get($spacing-vertical, x-small) !important;
+        margin-bottom: map-get($spacing-vertical, x-small) !important;
         flex: 0 0 25%;
         max-width: 25%;
       }
@@ -253,7 +253,7 @@
       }
 
       .signatory-signature {
-        height: map-get($spacing-vertical, small);
+        height: map-get($spacing-vertical, base);
         max-width: 100%;
         margin-top: 0;
         padding-top: 0 !important;
