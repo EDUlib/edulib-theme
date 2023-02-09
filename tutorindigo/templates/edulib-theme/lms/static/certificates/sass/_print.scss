@@ -192,7 +192,7 @@
     top: 0 !important;
     border: rem(1) solid $edulib-light-blue;
     box-shadow: none;
-    padding: map-get($spacing-vertical, base) map-get($spacing-horizontal, base);
+    padding: map-get($spacing-vertical, base) map-get($spacing-horizontal, small) map-get($spacing-horizontal, x-small) map-get($spacing-horizontal, small);
 
     @include rtl {
       display: block !important;
