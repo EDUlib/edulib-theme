@@ -22,14 +22,14 @@ course_mode_class = course_mode if course_mode else ''
                     <img class="organization-logo" src="${logo_src}" alt="${platform_name}">
                 </span>
 
-                <span class="accomplishment-type-label hd-5 metadata accomplishment-date">Émise le : ${certificate_date_issued}</span>
+                <span class="accomplishment-type-label hd-5 metadata accomplishment-date">${certificate_date_issued_title} ${certificate_date_issued}</span>
             </div>
 
             <div class="wrapper-statement-and-signatories">
                 <div class="accomplishment-statement">
                     <p class="accomplishment-statement-lead">
                         <strong class="accomplishment-recipient hd-1 emphasized">${accomplishment_copy_name}</strong>
-                        <span class="accomplishment-summary copy copy-lead">a complété avec succès</span>
+                        <span class="accomplishment-summary copy copy-lead">${accomplishment_copy_description_short}</span>
 
                         <span class="accomplishment-course hd-2 emphasized">
                             <span class="accomplishment-course-org">${accomplishment_copy_course_org}  </span>
