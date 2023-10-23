@@ -162,16 +162,16 @@ from common.djangoapps.pipeline_mako import render_require_js_path_overrides
     </script>
 % endif
 
-<% ga_4_id = static.get_value("GOOGLE_ANALYTICS_4_ID", settings.GOOGLE_ANALYTICS_4_ID) %>
-% if ga_4_id:
-  <script async src="https://www.googletagmanager.com/gtag/js?id=${ga_4_id}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '${ga_4_id | n, js_escaped_string}');
-  </script>
+<% ga_acct1 = static.get_value("GOOGLE_ANALYTICS_ACCOUNT_4", settings.GOOGLE_ANALYTICS_ACCOUNT_4) %>
+% if ga_acct1:
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${ga_acct1 | n, js_escaped_string}}"></script>
+    <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', '${ga_acct1 | n, js_escaped_string}');
+    </script>
 % endif
 
 <% branch_key = static.get_value("BRANCH_IO_KEY", settings.BRANCH_IO_KEY) %>
@@ -204,11 +204,10 @@ from common.djangoapps.pipeline_mako import render_require_js_path_overrides
         <%include file="/preview_menu.html" />
     % endif
 
-    <%include file="/page_banner.html" />
-
     <div class="marketing-hero"><%block name="marketing_hero"></%block></div>
 
     <div class="content-wrapper main-container" id="content" dir="${static.dir_rtl()}">
+      <%include file="/page_banner.html" />
       ${next.body()}
       <%block name="bodyextra"/>
     </div>
